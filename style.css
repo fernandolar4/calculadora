@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&family=Overpass:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+  background-color: black;
+  color: black;
+}
+
+.container {
+  max-width: 40vw;
+
+  margin: 10vh auto 0 auto;
+  box-shadow: -10px 0px 13px -7px #da3b30, 10px 0px 13px -7px #da3b30,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  padding: 2vw;
+  background-color: whitesmoke;
+}
+
+#display {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  background-color: whitesmoke;
+}
+
+.buttons {
+  display: grid;
+  border: 1px solid #da3b30;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: whitesmoke;
+}
+
+.buttons > div {
+  border: 1px solid #da3b30;
+}
+
+.btn {
+  border: 0.5px solid #da3b30;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+#equal {
+  background-color: #da3b30;
+  color: whitesmoke;
+}
+
+.btn:hover {
+  transition: 0.5s ease-in-out;
+  background-color: black;
+  color: #da3b30;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  text-decoration: none;
+}
+
+.eu {
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 85vw;
+  }
+}
