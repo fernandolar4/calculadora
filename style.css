@@ -8,7 +8,6 @@
 
 .container {
   max-width: 40vw;
-
   margin: 10vh auto 0 auto;
   box-shadow: -10px 0px 13px -7px #da3b30, 10px 0px 13px -7px #da3b30,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -21,20 +20,18 @@
   height: 70px;
   line-height: 70px;
   padding: 16px 8px;
-  font-size: 25px;
+  font-size: 35px;
   background-color: whitesmoke;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .buttons {
   display: grid;
   border: 1px solid #da3b30;
-
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: whitesmoke;
-}
-
-.buttons > div {
-  border: 1px solid #da3b30;
 }
 
 .btn {
@@ -61,7 +58,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 3vh;
   text-decoration: none;
 }
 
@@ -72,5 +69,16 @@ footer {
 @media only screen and (max-width: 600px) {
   .container {
     max-width: 85vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1920px) {
+  .container {
+    max-width: 60vw;
+  }
+
+  .btn {
+    border: 0.5px solid #da3b30;
+    line-height: 75px;
   }
 }
