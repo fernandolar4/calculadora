@@ -72,13 +72,13 @@ footer {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1920px) {
+@media (min-width: 600px) and (max-width: 1920px) {
   .container {
     max-width: 60vw;
   }
 
   .btn {
-    border: 0.5px solid #da3b30;
     line-height: 75px;
   }
 }
+
